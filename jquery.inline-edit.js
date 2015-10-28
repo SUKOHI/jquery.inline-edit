@@ -56,7 +56,7 @@
 
                     if(typeof(callback) == 'function') {
 
-                        callback(text, originalText);
+                        callback(text, originalText, $(target));
 
                     }
 

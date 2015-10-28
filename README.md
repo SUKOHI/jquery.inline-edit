@@ -25,7 +25,7 @@ Usage
     
 **with Callback**
     
-    $('.inline-edit').inlineEdit('click', function(text, originalText){
+    $('.inline-edit').inlineEdit('click', function(text, originalText, element){
                                                    
         // Do something..
 
@@ -40,7 +40,7 @@ Usage
             style: 'background:#ffe;'
         }
     };
-    $('.inline-edit').inlineEdit('click', options, function(text, originalText){
+    $('.inline-edit').inlineEdit('click', options, function(text, originalText, element){
                                                             
         // Do something..
 
