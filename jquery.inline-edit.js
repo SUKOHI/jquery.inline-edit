@@ -29,9 +29,13 @@
                         .html(IE.inputTag(text, options));
                     IE.inputChild(target)
                         .focus()
-                        .on('blur', function(e){
+                        .on('blur keypress', function(e){
 
-                            IE.hide(e, target);
+                            if(e.type == 'blur' || (e.type == 'keypress' && e.keyCode == 13)) {
+
+                                IE.hide(e, target);
+
+                            }
 
                         });
 
